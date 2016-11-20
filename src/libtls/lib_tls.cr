@@ -33,7 +33,7 @@ lib LibTls
   fun tls_config_set_key_file(config: TlsConfig, key_file: UInt8*) : Int
   fun tls_config_set_key_mem(config: TlsConfig, key: UInt8*, len: SizeT) : Int
   fun tls_config_set_keypair_file(config: TlsConfig, cert_file: UInt8*, key_file: UInt8*) : Int
-  fun tls_config_set_keypair_mem(config: TlsConfig, cert: UInt8*, cert_len: UInt8*, key: UInt8*, key_len: SizeT) : Int
+  fun tls_config_set_keypair_mem(config: TlsConfig, cert: UInt8*, cert_len: SizeT, key: UInt8*, key_len: SizeT) : Int
   fun tls_config_set_protocols(config: TlsConfig, protocols: UInt32)
   fun tls_config_set_verify_depth(config: TlsConfig, verify_depth: Int)
 
