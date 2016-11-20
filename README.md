@@ -1,4 +1,4 @@
-# libtls
+# libtls.cr
 
 libtls bindings for Crystal
 
@@ -20,10 +20,6 @@ dependencies:
 ```crystal
 require "libtls"
 ```
-
-
-
-## Development
 
 
 ## Contributing
