@@ -7,9 +7,9 @@ lib LibTls
   type Tls = Void*
   type TlsConfig = Void*
 
-  TLS_PROTOCOL_TLSv1_0 = 1 << 1
-  TLS_PROTOCOL_TLSv1_1 = 1 << 2
-  TLS_PROTOCOL_TLSv1_2 = 1 << 3
+  TLS_PROTOCOL_TLSv1_0 = (1 << 1).to_u32
+  TLS_PROTOCOL_TLSv1_1 = (1 << 2).to_u32
+  TLS_PROTOCOL_TLSv1_2 = (1 << 3).to_u32
   TLS_PROTOCOL_ALL = (TLS_PROTOCOL_TLSv1_0 | TLS_PROTOCOL_TLSv1_1 | TLS_PROTOCOL_TLSv1_2)
 
   TLS_WANT_POLLIN = -2
